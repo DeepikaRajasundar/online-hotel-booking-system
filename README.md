@@ -45,7 +45,7 @@ http://localhost:4200/
 
 
 ### Register Page
-![Register](register.png)
+
 
 ### Home Page
 <img width="960" height="540" alt="Screenshot 2024-06-14 124540" src="https://github.com/user-attachments/assets/1e08e77d-c178-4ab1-86ba-c0570b35e1de" />
