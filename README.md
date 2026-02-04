@@ -1,27 +1,77 @@
-# Ex88
+# Online Hotel Booking System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+This project is an Online Hotel Booking System developed using Angular.  
+It allows users to view hotels, check details, and book rooms through a simple and user-friendly interface.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
+- User registration and login
+- View available hotels
+- View hotel details
+- Book hotel rooms
+- Simple and clean UI
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies Used
+- Angular
+- TypeScript
+- HTML
+- CSS
+- Node.js (for backend)
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## How to Run the Project
 
-## Running unit tests
+Step 1: Install dependencies
+npm install
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Step 2: Run Angular application
+npx ng serve
 
-## Running end-to-end tests
+Step 3: Open in browser
+http://localhost:4200/
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## Screenshots
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Login Page
+![Login](login.png)
+
+### Register Page
+![Register](register.png)
+
+### Home Page
+![Home](home.png)
+
+### Hotel List Page
+![Hotels](hotels.png)
+
+### Booking Page
+![Booking](booking.png)
+
+---
+
+## Project Structure
+online-hotel-booking-system/
+├── src/
+├── angular.json
+├── package.json
+├── server.ts
+└── README.md
+
+---
+
+## Use Case
+- Online hotel reservation system
+- Academic mini project
+- Learning Angular components and routing
+
+---
+
+## Author
+Deepika R  
+GitHub: https://github.com/DeepikaRajasundar
