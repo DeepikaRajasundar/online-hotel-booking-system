@@ -1,0 +1,42 @@
+<mat-toolbar color="primary" style="background-color: red; position: fixed; top: 0; width: 100%; z-index: 1000;">
+  <mat-toolbar-row style="justify-content: center;"> <!-- Centering the content -->
+    <span style="display: flex; align-items: center; font-size: 24px; font-weight: bold;">DEEPS HOTEL</span> <!-- Centering the hotel name -->
+    <span class="example-spacer"></span>
+    <mat-menu #homeMenu="matMenu">
+      <button mat-menu-item (click)="logout()">Logout</button>
+    </mat-menu>
+    <button mat-icon-button [matMenuTriggerFor]="homeMenu">
+      <mat-icon class="example-icon">home</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container style="margin-top: 64px;"> <!-- Adjusting for the fixed toolbar height -->
+  <mat-sidenav mode="side" opened>
+    <mat-nav-list style="width: 200px;">
+      <a mat-list-item routerLink="login" style="height: 60px;">
+        <mat-icon style="height: 24px; width: 24px;">account_box</mat-icon> <!-- Adjusting icon size -->
+        <span style="margin-left: 8px;">Login</span> <!-- Adding margin for text alignment -->
+      </a>
+      <a mat-list-item routerLink="about" style="height: 60px;">
+        <mat-icon style="height: 24px; width: 24px;">info</mat-icon> <!-- Adjusting icon size -->
+        <span style="margin-left: 8px;">About</span> <!-- Adding margin for text alignment -->
+      </a>
+      <a mat-list-item routerLink="book" style="height: 60px;">
+        <mat-icon style="height: 24px; width: 24px;">book</mat-icon> <!-- Adjusting icon size -->
+        <span style="margin-left: 8px;">Booking</span> <!-- Adding margin for text alignment -->
+      </a>
+      <a mat-list-item routerLink="cart" style="height: 60px;">
+        <mat-icon style="height: 24px; width: 24px;">add_shopping_cart</mat-icon> <!-- Adjusting icon size -->
+        <span style="margin-left: 8px;">Cart</span> <!-- Adding margin for text alignment -->
+      </a>
+      <a mat-list-item routerLink="contact" style="height: 60px;">
+        <mat-icon style="height: 24px; width: 24px;">contact_support</mat-icon> <!-- Adjusting icon size -->
+        <span style="margin-left: 8px;">Contact</span> <!-- Adding margin for text alignment -->
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content style="padding: 16px;"> <!-- Adding padding for content -->
+    <router-outlet></router-outlet> <!-- Displaying routed components -->
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,56 @@
+/* Center the form on the page */
+.booking-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the mat-card to add spacing */
+mat-card {
+  margin: 20px 0;
+  padding: 20px;
+}
+
+/* Add spacing between form fields */
+mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Style the submit button */
+mat-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px; /* Add margin to separate from form fields */
+}
+
+button[type="submit"] {
+  min-width: 150px;
+}
+.booking-background {
+  background-image: url('https://wallpaperaccess.com/full/2690784.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Ensures the background covers the entire viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-form {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for readability */
+  border-radius: 8px;
+}
+
+/* Style the mat-card inside the form */
+mat-card {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Lighter semi-transparent white background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 8px;
+}
+
+/* Add more styling as per your requirements */

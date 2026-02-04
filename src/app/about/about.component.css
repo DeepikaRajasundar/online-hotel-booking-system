@@ -1,0 +1,44 @@
+.hotel-about {
+  background-image: url('https://wallpaperaccess.com/full/902489.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-card {
+  max-width: 600px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.about-card mat-card-header {
+  background-color: #ffffff; /* White header background */
+  border-bottom: 1px solid #ddd; /* Light border */
+}
+
+.info-field {
+  margin-bottom: 20px;
+}
+
+.facility {
+  margin-bottom: 10px;
+}
+
+.facility p {
+  margin: 5px 0;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+.button-container {
+  text-align: right; /* Align button to the right */
+  margin-top: 20px; /* Space above the button */
+}
+

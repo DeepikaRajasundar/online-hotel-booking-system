@@ -1,0 +1,68 @@
+<div class="booking-background">
+  <form [formGroup]="bookingForm" (ngSubmit)="submitBookingForm()" class="booking-form">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Hotel Booking</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <!-- Customer Name -->
+        <mat-form-field appearance="fill">
+          <mat-label>Customer Name</mat-label>
+          <input matInput formControlName="customerName" placeholder="Enter Customer Name">
+        </mat-form-field>
+
+        <!-- Room Type -->
+        <mat-form-field appearance="fill">
+          <mat-label>Room Type</mat-label>
+          <mat-select formControlName="roomType" placeholder="Select Room Type">
+            <mat-option value="single">Single</mat-option>
+            <mat-option value="double">Double</mat-option>
+            <mat-option value="suite">Suite</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <!-- Payment Type -->
+        <mat-form-field appearance="fill">
+          <mat-label>Payment Type</mat-label>
+          <mat-select formControlName="paymentType" placeholder="Select Payment Type">
+            <mat-option value="creditCard">Credit Card</mat-option>
+            <mat-option value="debitCard">Debit Card</mat-option>
+            <mat-option value="paypal">PayPal</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <!-- Check-in Date -->
+        <mat-form-field appearance="fill">
+          <mat-label>Check-in Date</mat-label>
+          <input matInput [matDatepicker]="picker1" formControlName="checkInDate" placeholder="Select Check-in Date">
+          <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+          <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+
+        <!-- Check-out Date -->
+        <mat-form-field appearance="fill">
+          <mat-label>Check-out Date</mat-label>
+          <input matInput [matDatepicker]="picker2" formControlName="checkOutDate" placeholder="Select Check-out Date">
+          <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+          <mat-datepicker #picker2></mat-datepicker>
+        </mat-form-field>
+
+        <!-- Address -->
+        <mat-form-field appearance="fill">
+          <mat-label>Address</mat-label>
+          <textarea matInput formControlName="address" placeholder="Enter Address"></textarea>
+        </mat-form-field>
+
+        <!-- Phone Number -->
+        <mat-form-field appearance="fill">
+          <mat-label>Phone Number</mat-label>
+          <input matInput formControlName="phoneNumber" placeholder="Enter Phone Number">
+        </mat-form-field>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" type="submit" [disabled]="!bookingForm.valid">Submit</button>
+      </mat-card-actions>
+    </mat-card>
+  </form>
+</div>
+<router-outlet></router-outlet>

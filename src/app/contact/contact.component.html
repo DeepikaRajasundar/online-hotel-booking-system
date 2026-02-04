@@ -1,0 +1,41 @@
+<div class="contact-background">
+  <!-- Ensure the background image URL is correctly specified -->
+  <img src="https://tse3.mm.bing.net/th?id=OIP.KZ7hu5yKNrjg0x5v-p-bUAHaE8&pid=Api&P=0&h=180">
+  
+  <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Contact Us</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="info-field">
+          <mat-label>Hotel Email:</mat-label>
+          <div>deepshotel&#64;mail.com</div>
+        </div>
+
+        <div class="info-field">
+          <mat-label>Hotel Phone Number:</mat-label>
+          <div>9876543210</div>
+        </div>
+
+        <div class="info-field">
+          <mat-label>Address:</mat-label>
+          <div>123 Main Street, City, Country</div>
+        </div>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Queries</mat-label>
+          <textarea matInput formControlName="queries"></textarea>
+          <mat-error *ngIf="isFormControlInvalid('queries') && contactForm.get('queries')?.hasError('required')">Queries are required</mat-error>
+        </mat-form-field>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" type="submit">Submit</button>
+      </mat-card-actions>
+    </mat-card>
+  </form>
+</div>
+
+<div *ngIf="formSubmitted">
+  <h3>Thank you for your feedback!</h3>
+</div>

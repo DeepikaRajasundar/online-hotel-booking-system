@@ -1,0 +1,56 @@
+.contact-background {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure image doesn't overflow */
+  background-image: url('https://media.istockphoto.com/photos/hand-pressing-a-contact-us-button-picture-id487923098?k=6&m=487923098&s=612x612&w=0&h=fzAGlVKaTlnYJuZpRCD9ScQcyOzonwtwvOGMmvZBO1U');
+  background-size: 120%; /* Increase size to 120% to make it larger */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact-form {
+  position: relative; /* Ensure form appears above background image */
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  z-index: 1; /* Ensure form appears above background image */
+}
+
+.contact-form mat-card-header {
+  background-color: #ffffff; /* White header background */
+  border-bottom: 1px solid #ddd; /* Light border */
+}
+
+.contact-form mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.info-field {
+  margin-bottom: 20px;
+}
+
+.info-field mat-label {
+  font-weight: bold;
+}
+
+.info-field div {
+  padding: 8px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.mat-card-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button[type="submit"] {
+  min-width: 150px;
+}

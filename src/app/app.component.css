@@ -1,0 +1,39 @@
+.mat-drawer-container {
+    background-color: grey;
+  }
+  
+  .mat-sidenav {
+    background-color:white ; /* Change drawer color to black */
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  mat-toolbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  mat-sidenav-container {
+    margin-top: 64px; /* Adjust for fixed toolbar height */
+  }
+  
+  mat-sidenav {
+    width: 200px;
+  }
+  /* Example styling for toolbar */
+.toolbar {
+  background-color: #2196f3;
+  color: white;
+  padding: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar-title {
+  font-size: 20px;
+  margin-left: 10px;
+}
+

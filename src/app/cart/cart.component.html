@@ -1,0 +1,14 @@
+<div class="cart-background">
+  <mat-card *ngFor="let item of cartItems; let i = index">
+    <mat-card-header>
+      <mat-card-title>Booking Confirmation</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>Customer Name: {{ item.customerName }}</p>
+      <p>Check-in Date: {{ item.checkInDate | date:'mediumDate' }}</p>
+      <p>Check-out Date: {{ item.checkOutDate | date:'mediumDate' }}</p>
+      <button mat-raised-button color="warn" (click)="removeItem(i)">Remove</button>
+    </mat-card-content>
+  </mat-card>
+</div>
+<router-outlet></router-outlet>
